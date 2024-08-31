@@ -9,55 +9,25 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">7</td><td class="num">2,853</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">18</td><td class="num">40,433</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="7">cucumberOptions.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="7">1725127520595</td><td rowspan="7">38</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m3">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m4">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m5">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m6">runScenario</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="18">cucumberOptions.TestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="18">1725130088857</td><td rowspan="18">44</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m2">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m3">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m4">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m5">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m6">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m7">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m8">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m9">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m10">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m11">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m12">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m13">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m14">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m15">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m16">runScenario</a></td></tr><tr class="failedeven"><td><a href="#m17">runScenario</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Investor enters invalid and valid amounts and verifies error validation messages&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Single Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &apos;the investor is logged in&apos; and 8 other step(s) are undefined.
+<h2>Default test</h2><h3 id="m0">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify flow for attempt redemption without entering AUM Amount&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Joint Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &apos;the investor is on redemption page&apos; and 2 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
 
-@Given(&quot;the investor is logged in&quot;)
-public void the_investor_is_logged_in() {
+@Given(&quot;the investor is on redemption page&quot;)
+public void the_investor_is_on_redemption_page() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given(&quot;the dashboard page is displayed&quot;)
-public void the_dashboard_page_is_displayed() {
+@When(&quot;the investor does not enter an AUM Amount and clicks on the redeem button&quot;)
+public void the_investor_does_not_enter_an_aum_amount_and_clicks_on_the_redeem_button() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given(&quot;the investor is on the redemption page&quot;)
-public void the_investor_is_on_the_redemption_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;the investor enters an amount less than {int} Lakhs in the amount field&quot;)
-public void the_investor_enters_an_amount_less_than_lakhs_in_the_amount_field(Integer int1) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;the investor should see a validation message for the minimum amount requirement&quot;)
-public void the_investor_should_see_a_validation_message_for_the_minimum_amount_requirement() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;the investor enters an amount equal to the AUM amount&quot;)
-public void the_investor_enters_an_amount_equal_to_the_aum_amount() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;the investor should see a validation message for the maximum amount&quot;)
-public void the_investor_should_see_a_validation_message_for_the_maximum_amount() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;the investor does not enter an amount and clicks on the redeem button&quot;)
-public void the_investor_does_not_enter_an_amount_and_clicks_on_the_redeem_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;the redeem button should be disabled&quot;)
-public void the_redeem_button_should_be_disabled() {
+@Then(&quot;the investor should see the redeem button is disablead&quot;)
+public void the_investor_should_see_the_redeem_button_is_disablead() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
@@ -97,26 +67,281 @@ public void the_redeem_button_should_be_disabled() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Successful login with PAN and password&quot;</td><td>&quot;login&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &apos;the user is on the login page&apos; and 3 other step(s) are undefined.
+<h3 id="m1">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Investor selects PMS redemption option&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Single Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:53994/devtools/browser/77ffdb12-7576-4291-8967-35c2dd75295a
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at utils.TestBase.WebDriverManager(TestBase.java:30)
+	at utils.TestContexSetup.&lt;init&gt;(TestContexSetup.java:20)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Investor logs in and navigates to the redemption page&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Joint Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:53884/devtools/browser/f267229d-316b-4c03-907c-fba54ecf04e7
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at utils.TestBase.WebDriverManager(TestBase.java:30)
+	at utils.TestContexSetup.&lt;init&gt;(TestContexSetup.java:20)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Successful login with PAN and password&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Single Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:53957/devtools/browser/6f9e5d45-e8aa-4654-a576-042d9eebb976
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at utils.TestBase.WebDriverManager(TestBase.java:30)
+	at utils.TestContexSetup.&lt;init&gt;(TestContexSetup.java:20)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify placed transaction entry on Recent Transaction Page&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Joint Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &apos;the investor is on the dashboard page&apos; and 3 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
 
-@Given(&quot;the user is on the login page&quot;)
-public void the_user_is_on_the_login_page() {
+@Given(&quot;the investor is on the dashboard page&quot;)
+public void the_investor_is_on_the_dashboard_page() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When(&quot;User login into application with {string} and password {string}&quot;)
-public void user_login_into_application_with_and_password(String string, String string2) {
+@When(&quot;the investor clicks on Recent transaction page from side menu&quot;)
+public void the_investor_clicks_on_recent_transaction_page_from_side_menu() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When(&quot;Click on login button&quot;)
-public void click_on_login_button() {
+@Then(&quot;the investor should see the placed transcation entry on recent transaction page&quot;)
+public void the_investor_should_see_the_placed_transcation_entry_on_recent_transaction_page() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Then(&quot;dashboard page should be display&quot;)
-public void dashboard_page_should_be_display() {
+@Then(&quot;the status of transaction should be displayed correctly&quot;)
+public void the_status_of_transaction_should_be_displayed_correctly() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
@@ -156,26 +381,21 @@ public void dashboard_page_should_be_display() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Investor navigates to the redemption page&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Single Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &apos;the investor is logged in&apos; and 3 other step(s) are undefined.
+<h3 id="m5">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify error validation message for entering AUM amount value is equal to selected Stretergy cards total AUM Amount&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Joint Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &apos;the investor is on redemption page&apos; and 2 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
 
-@Given(&quot;the investor is logged in&quot;)
-public void the_investor_is_logged_in() {
+@Given(&quot;the investor is on redemption page&quot;)
+public void the_investor_is_on_redemption_page() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given(&quot;the dashboard page is displayed&quot;)
-public void the_dashboard_page_is_displayed() {
+@When(&quot;the investor enters an AUM Amount value is equal to selected Stretergy cards total AUM Amount&quot;)
+public void the_investor_enters_an_aum_amount_value_is_equal_to_selected_stretergy_cards_total_aum_amount() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When(&quot;the investor clicks on the Redemption Module from the side menu&quot;)
-public void the_investor_clicks_on_the_redemption_module_from_the_side_menu() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;the PMS Redemption page should be displayed on the screen&quot;)
-public void the_pms_redemption_page_should_be_displayed_on_the_screen() {
+@Then(&quot;the investor should see a error validation message for the minimum amount requirement&quot;)
+public void the_investor_should_see_a_error_validation_message_for_the_minimum_amount_requirement() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
@@ -215,36 +435,458 @@ public void the_pms_redemption_page_should_be_displayed_on_the_screen() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Successful login with PAN and password&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Single Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &apos;the investor is logged in&apos; and 5 other step(s) are undefined.
+<h3 id="m6">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Investor enters invalid and valid amounts and verifies error validation messages&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Single Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:54010/devtools/browser/911f5a78-deee-4e20-9b41-1f18d096e7d2
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at utils.TestBase.WebDriverManager(TestBase.java:30)
+	at utils.TestContexSetup.&lt;init&gt;(TestContexSetup.java:20)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Investor verifies transaction in recent transactions page&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Single Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:54044/devtools/browser/f16014ec-4370-4aac-913c-31aad163f243
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at utils.TestBase.WebDriverManager(TestBase.java:30)
+	at utils.TestContexSetup.&lt;init&gt;(TestContexSetup.java:20)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Successful login with PAN and password&quot;</td><td>&quot;login&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:53863/devtools/browser/9ecbf984-07b4-45e2-b071-2d90fcbcb03e
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at utils.TestBase.WebDriverManager(TestBase.java:30)
+	at utils.TestContexSetup.&lt;init&gt;(TestContexSetup.java:20)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Investor redeems investment and verifies details&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Single Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:54026/devtools/browser/9282ab0b-c913-4905-8d40-d62b42cf6513
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at utils.TestBase.WebDriverManager(TestBase.java:30)
+	at utils.TestContexSetup.&lt;init&gt;(TestContexSetup.java:20)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Investor navigates to the redemption page&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Single Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: Chrome failed to start: exited normally.
+  (chrome not reachable)
+  (The process started from chrome location C:\Program Files (x86)\Google\Chrome\Application\chrome.exe is no longer running, so ChromeDriver is assuming that Chrome has crashed.) 
+Host info: host: &apos;DESKTOP-AF63SQD&apos;, ip: &apos;192.168.0.109&apos;
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:146)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:101)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:157)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:101)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at utils.TestBase.WebDriverManager(TestBase.java:30)
+	at utils.TestContexSetup.&lt;init&gt;(TestContexSetup.java:20)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Joint holder logs in and navigates to JH approval request tab&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Joint Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &apos;the Joint holder logged in&apos; and 3 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
 
-@Given(&quot;the investor is logged in&quot;)
-public void the_investor_is_logged_in() {
+@Given(&quot;the Joint holder logged in&quot;)
+public void the_joint_holder_logged_in() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given(&quot;the dashboard page is displayed&quot;)
-public void the_dashboard_page_is_displayed() {
+@Given(&quot;the dashbaord page is displayed&quot;)
+public void the_dashbaord_page_is_displayed() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given(&quot;the user is on the login page&quot;)
-public void the_user_is_on_the_login_page() {
+@When(&quot;the Joint holder clicks on JH approval request tab&quot;)
+public void the_joint_holder_clicks_on_jh_approval_request_tab() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When(&quot;the user logs into the application with {string} and password {string}&quot;)
-public void the_user_logs_into_the_application_with_and_password(String string, String string2) {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;the user clicks on the login button&quot;)
-public void the_user_clicks_on_the_login_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;the dashboard page should be displayed&quot;)
-public void the_dashboard_page_should_be_displayed() {
+@Then(&quot;the JH request page is displayed&quot;)
+public void the_jh_request_page_is_displayed() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
@@ -284,46 +926,26 @@ public void the_dashboard_page_should_be_displayed() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Investor redeems investment and verifies details&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Single Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &apos;the investor is logged in&apos; and 7 other step(s) are undefined.
+<h3 id="m12">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Complete redemption Process&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Joint Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &apos;the investor is on L2 screen&apos; and 3 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
 
-@Given(&quot;the investor is logged in&quot;)
-public void the_investor_is_logged_in() {
+@Given(&quot;the investor is on L2 screen&quot;)
+public void the_investor_is_on_l2_screen() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given(&quot;the dashboard page is displayed&quot;)
-public void the_dashboard_page_is_displayed() {
+@When(&quot;the investor clicks on T&amp;C checkbox button&quot;)
+public void the_investor_clicks_on_t_c_checkbox_button() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given(&quot;the investor is on the redemption page&quot;)
-public void the_investor_is_on_the_redemption_page() {
+@When(&quot;Click on Redeem Amount button&quot;)
+public void click_on_redeem_amount_button() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When(&quot;the L2 screen is displayed&quot;)
-public void the_l2_screen_is_displayed() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;the entered amount is displayed on the L2 screen&quot;)
-public void the_entered_amount_is_displayed_on_the_l2_screen() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;the investor clicks on the T&amp;C checkbox and clicks on the redeem amount button&quot;)
-public void the_investor_clicks_on_the_t_c_checkbox_and_clicks_on_the_redeem_amount_button() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;the investor enters the OTP&quot;)
-public void the_investor_enters_the_otp() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;the investor should see a success validation message&quot;)
-public void the_investor_should_see_a_success_validation_message() {
+@When(&quot;Enteres OTP and clicks on proceed button&quot;)
+public void enteres_otp_and_clicks_on_proceed_button() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
@@ -363,35 +985,105 @@ public void the_investor_should_see_a_success_validation_message() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Investor selects PMS redemption option&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Single Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &apos;the investor is logged in&apos; and 5 other step(s) are undefined.
+<h3 id="m13">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify AUM AMount for partial redmeption&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Joint Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:53904/devtools/browser/9b4f6432-9931-4fb2-ab97-aa000b44aefa
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at utils.TestBase.WebDriverManager(TestBase.java:30)
+	at utils.TestContexSetup.&lt;init&gt;(TestContexSetup.java:20)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Investor selects redmeption options&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Joint Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &apos;the Investor selects &quot;&lt;Joint Holder&gt;&quot; from the dropdown&apos; and 2 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
 
-@Given(&quot;the investor is logged in&quot;)
-public void the_investor_is_logged_in() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given(&quot;the dashboard page is displayed&quot;)
-public void the_dashboard_page_is_displayed() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Given(&quot;the investor is on the redemption page&quot;)
-public void the_investor_is_on_the_redemption_page() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@When(&quot;the investor selects {string} from the dropdown&quot;)
+@Given(&quot;the Investor selects {string} from the dropdown&quot;)
 public void the_investor_selects_from_the_dropdown(String string) {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When(&quot;the investor selects the Strategy checkbox&quot;)
-public void the_investor_selects_the_strategy_checkbox() {
+@Given(&quot;the Investor selects the stratergy checkbox&quot;)
+public void the_investor_selects_the_stratergy_checkbox() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When(&quot;the investor clicks on the Partial radio button&quot;)
+@Given(&quot;the Investor clicks on the partial radio button&quot;)
 public void the_investor_clicks_on_the_partial_radio_button() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
@@ -432,36 +1124,26 @@ public void the_investor_clicks_on_the_partial_radio_button() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Investor verifies transaction in recent transactions page&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Single Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &apos;the investor is logged in&apos; and 5 other step(s) are undefined.
+<h3 id="m15">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify Investor enters valid AUM amount and click on Redeem Button&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Joint Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">io.cucumber.testng.UndefinedStepException: The step &apos;the investor is on redemption page&apos; and 3 other step(s) are undefined.
 You can implement these steps using the snippet(s) below:
 
-@Given(&quot;the investor is logged in&quot;)
-public void the_investor_is_logged_in() {
+@Given(&quot;the investor is on redemption page&quot;)
+public void the_investor_is_on_redemption_page() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given(&quot;the dashboard page is displayed&quot;)
-public void the_dashboard_page_is_displayed() {
+@When(&quot;the investor enteres an AUM amount value is greater than 2L or equal to 2L&quot;)
+public void the_investor_enteres_an_aum_amount_value_is_greater_than_2l_or_equal_to_2l() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@Given(&quot;the investor is on the dashboard page&quot;)
-public void the_investor_is_on_the_dashboard_page() {
+@When(&quot;click on Redeem button&quot;)
+public void click_on_redeem_button() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
-@When(&quot;the investor clicks on the recent transaction option from the side menu&quot;)
-public void the_investor_clicks_on_the_recent_transaction_option_from_the_side_menu() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;the investor should see the entry in the transaction list&quot;)
-public void the_investor_should_see_the_entry_in_the_transaction_list() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-@Then(&quot;the status of the transaction should be displayed correctly&quot;)
-public void the_status_of_the_transaction_should_be_displayed_correctly() {
+@Then(&quot;the investor should see L2 screen&quot;)
+public void the_investor_should_see_l2_screen() {
     // Write code here that turns the phrase above into concrete actions
     throw new io.cucumber.java.PendingException();
 }
@@ -469,6 +1151,176 @@ public void the_status_of_the_transaction_should_be_displayed_correctly() {
 	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
 	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
 	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:133)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify Error validation for AUM amount field&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Joint Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:53925/devtools/browser/29e92280-850a-4582-a268-25bae55d1d2c
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at utils.TestBase.WebDriverManager(TestBase.java:30)
+	at utils.TestContexSetup.&lt;init&gt;(TestContexSetup.java:20)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
+	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">cucumberOptions.TestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Investor verifies the status of the approved transaction&quot;</td><td>&quot;Investor Login PMS Partial Redemption for Joint Holder&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:53941/devtools/browser/2166233e-f723-4b99-b278-8c351735d4db
+Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.4&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
+	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
+	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
+	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:77)
+	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:81)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:49)
+	at utils.TestBase.WebDriverManager(TestBase.java:30)
+	at utils.TestContexSetup.&lt;init&gt;(TestContexSetup.java:20)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:632)
+	at org.picocontainer.parameters.BasicComponentParameter$1.resolveInstance(BasicComponentParameter.java:118)
+	at org.picocontainer.parameters.ComponentParameter$1.resolveInstance(ComponentParameter.java:136)
+	at org.picocontainer.injectors.SingleMemberInjector.getParameter(SingleMemberInjector.java:78)
+	at org.picocontainer.injectors.ConstructorInjector$CtorAndAdapters.getParameterArguments(ConstructorInjector.java:309)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:335)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
 	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
 	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
 	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
