@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 public class LoginPage {
 
 	public WebDriver driver;
+	
 	public LoginPage(WebDriver driver)
 	{
 	this.driver=driver;	
