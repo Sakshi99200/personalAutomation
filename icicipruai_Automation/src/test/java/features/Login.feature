@@ -7,6 +7,6 @@ Scenario: Successful login with PAN and password
    
    Examples:
    |Username | Password |
-   |DZBPK4334N | Reset@1234 |
+   |DZBPK4334N | Test@1234 |
    
 
