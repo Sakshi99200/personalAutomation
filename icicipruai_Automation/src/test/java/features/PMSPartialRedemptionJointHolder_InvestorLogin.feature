@@ -1,5 +1,3 @@
-
-Copy code
 Feature: Investor Login PMS Partial Redemption for Joint Holder
 
 Scenario: Investor logs in and navigates to the redemption page

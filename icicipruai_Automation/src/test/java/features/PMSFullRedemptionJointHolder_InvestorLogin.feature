@@ -1,6 +1,5 @@
 Feature: Investor login Full Redemption with Joint Holder Approval
 
-
 Scenario: Investor logs in and navigates to the redemption page
   Given the investor is logged in
   And the dashboard page is displayed

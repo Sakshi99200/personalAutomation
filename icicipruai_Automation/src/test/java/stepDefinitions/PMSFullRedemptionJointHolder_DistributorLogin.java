@@ -133,7 +133,7 @@ public class PMSFullRedemptionJointHolder_DistributorLogin {
 	}
 
 	// Scenario: Investor logs in and reviews distributor's transaction request
-	@Given("the investor is logged in")
+	@Given("the investor is logged in to verify distributor trsanction request")
 	public void the_investor_is_logged_in() {
 		driver.findElement(By.id("username")).sendKeys("investorUsername");
 		driver.findElement(By.id("password")).sendKeys("investorPassword");

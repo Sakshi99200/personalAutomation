@@ -33,7 +33,7 @@ Feature: Distributor Redemption and Approval Workflow
     And the status of the transaction should be correctly displayed
 
   Scenario: Investor logs in and reviews distributor's transaction request
-    Given the investor is logged in
+    Given the investor is logged in to verify distributor trsanction request
     And the dashboard page is displayed
     When the investor clicks on the dashboard from the side menu
     And the investor clicks on the Distributor transaction request option

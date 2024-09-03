@@ -23,18 +23,18 @@ public class AdditionPurchase_ExistingStrategySingleHolder {
 		this.loginPage = testContexSetup.pageObjectManager.getLoginpage();
 	}
 
-	@Given("the investor is logged in")
-	public void the_investor_is_logged_in() {
+	@Given("the investor is logged in to the portal")
+	public void the_investor_is_logged_in_to_the_portal() {
 		driver.findElement(By.id("username")).sendKeys("investorUsername");
 		driver.findElement(By.id("password")).sendKeys("investorPassword");
 		driver.findElement(By.id("loginButton")).click();
 	}
 
-	@Given("the dashboard page is displayed")
+	@Given("the dashboard page is displayed on the screen")
 	public void the_dashboard_page_is_displayed() {
 		Assert.assertTrue(driver.findElement(By.id("dashboard")).isDisplayed());
 	}
-
+ 
 	@When("the investor clicks on the Additional Purchase option from the side menu")
 	public void the_investor_clicks_on_the_additional_purchase_option_from_the_side_menu() {
 		driver.findElement(By.id("additionalPurchaseMenuOption")).click();
@@ -47,12 +47,12 @@ public class AdditionPurchase_ExistingStrategySingleHolder {
 
 	// Scenario: Investor selects single holder and enters amount for existing
 	// strategy
-	@Given("the investor is on the Additional Purchase page")
+	@Given("the investor is on the Additional Purchase page1")
 	public void the_investor_is_on_the_additional_purchase_page() {
 		Assert.assertTrue(driver.findElement(By.id("additionalPurchasePage")).isDisplayed());
 	}
 
-	@When("the investor selects {string} from the dropdown")
+	@When("the investor selects {string} from the dropdown for existing strategy")
 	public void the_investor_selects_from_the_dropdown(String holderType) {
 		WebElement holderDropdown = driver.findElement(By.id("holderDropdown"));
 		holderDropdown.sendKeys(holderType);
@@ -80,7 +80,7 @@ public class AdditionPurchase_ExistingStrategySingleHolder {
 		driver.findElement(By.id("purchaseButton")).click();
 	}
 
-	@Then("the L2 screen should be displayed")
+	@Then("the L2 screen should be displayed on the screen")
 	public void the_l2_screen_should_be_displayed() {
 		Assert.assertTrue(driver.findElement(By.id("L2Screen")).isDisplayed());
 	}
@@ -148,8 +148,8 @@ public class AdditionPurchase_ExistingStrategySingleHolder {
 	}
 
 	// Scenario: Investor reviews transaction request and approves
-	@Given("the investor is logged in")
-	public void the_investor_is_logged_in1() {
+	@Given("the investor is logged in to approve the transaction")
+	public void the_investor_is_logged_in_to_approve_the_transaction() {
 		driver.findElement(By.id("username")).sendKeys("investorUsername");
 		driver.findElement(By.id("password")).sendKeys("investorPassword");
 		driver.findElement(By.id("loginButton")).click();

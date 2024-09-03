@@ -1,4 +1,5 @@
-Feature: login
+@LoginTest
+Feature: login functionality
 Scenario: Successful login with PAN and password
    Given the user is on the login page
    When User login into application with "<PanNumber>" and password "<Password>"

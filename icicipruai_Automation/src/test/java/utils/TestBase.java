@@ -38,10 +38,10 @@ public class TestBase {
 				driver = new EdgeDriver();
 				driver.manage().window().maximize();
 			}
-//			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			driver.get(url);
-			driver.findElement(By.xpath("//button[@id='details-button']")).click();
-			driver.findElement(By.xpath("//a[@id='proceed-link']")).click();
+//			driver.findElement(By.xpath("//button[@id='details-button']")).click();
+//			driver.findElement(By.xpath("//a[@id='proceed-link']")).click();
 		}
 		return driver;
 	}
